@@ -28,7 +28,7 @@ Train <- Train[,-1]
 
 # Building Random forest model
 
-model <- randomForest(price ~ ., data = Train, ntree = 500, mtry = 4, importance = TRUE)
+model <- randomForest(price ~ ., data = Train, ntree = 500, mtry = 5, importance = TRUE)
 
 # Save model to RDS file
 saveRDS(model, "model.rds")
